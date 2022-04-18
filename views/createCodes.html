@@ -1,0 +1,109 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="style1.css" rel="stylesheet" type="text/css">
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+
+    <!-- Document Title -->
+    <title>Generate Ref. Code</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/dtvcmcdnu/image/upload/v1650233742/logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+</head>
+<body style= 'background-image: url("https://res.cloudinary.com/dtvcmcdnu/image/upload/v1650239886/dsd.png"); background-size: cover; background-repeat: no-repeat;'>
+<nav class="navbar navbar-expand-lg navbar-light navbar-laravel" style="background-color: #ffffff">
+    <div class="container">
+    <a class="navbar-brand" href="/"  style="color:#1fa667"><img src='https://res.cloudinary.com/dtvcmcdnu/image/upload/v1650238846/Solution-_1.png'></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/createRetailer" style="color:#ff3b4a">Manufacturer Registration</a>
+            </li>
+        </ul>
+
+    </div>
+    </div>
+</nav>
+
+<main class="myform">
+    <div  class="cotainer">
+        <div class="row justify-content-center" style="margin-right: 15px; margin-left: 15px; margin-top: 20px;">
+            <div class="col-md-8">
+                    <div class="card">
+                        <div style="background-color: #ff3b4a; color: #ffffff"  class="card-header">Generate Ref. Codes</div>
+                        <div class="card-body">
+                            <form name="myform" onsubmit="return validform()" action="/QRCodeForManufacturer" method="POST" >
+
+                                <div class="form-group row">
+                                    <label for="brand" class="col-md-4 col-form-label text-md-right">Brand Name</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="brand" class="form-control" name="brand">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="model" class="col-md-4 col-form-label text-md-right">Model</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="model" class="form-control" name="model">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="description" class="col-md-4 col-form-label text-md-right">Description</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="description" class="form-control" name="description" style="height:100px">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="manufacturerName" class="col-md-4 col-form-label text-md-right">Manufacturer Name</label>
+                                    <div class="col-md-6">
+                                        <input type="type" id="manufacturerName" class="form-control" name="manufacturerName">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="manufacturerLocation" class="col-md-4 col-form-label text-md-right">Manufacturer Location</label>
+                                    <div class="col-md-6">
+                                        <input type="type" id="manufacturerLocation" class="form-control" name="manufacturerLocation">
+                                    </div>
+                                </div>
+
+                                    <div class="col-md-6 offset-md-4">
+                                        <button type="submit" class="btn btn-primary" style="background-color: #ff3b4a; border-color: #ff3b4a; color: #ffffff">
+                                        Generate
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>
